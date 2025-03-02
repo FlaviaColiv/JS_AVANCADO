@@ -131,3 +131,18 @@ Intl.DateTimeFormat - JavaScript | MDN (mozilla.org) https://developer.mozilla.o
 
 Date.prototype.toLocaleDateString() - JavaScript | MDN (mozilla.org)
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
+
+JavaScript Avançado - Introdução ao gerenciamento de pacotes com NPM
+Nessa aula, vamos aprender sobre o gerencimaento de pacotes utilizando o NPM. 
+
+
+GERENCIAMENTO DE PACOTES (biblioteca)
+Existem 2 ferramentas mais utilizadas, que são o NPM e o Yarn. Durante o curso, será visto apenas o NPM
+Link de apoio:
+
+Download do node.js https://nodejs.org/pt-br/download/
+
+JavaScript Avançado - Instalando e gerenciando versões do Node.js com NVM (Node Version Manager)
+O NVM – Node Version Manager (gerenciador de versão do Node), permite que você instale e gerencie diferentes versões do Node.js em sua máquina de forma simples, bem como, proporciona a troca de uma versão para outra com um simples comando no terminal e isso te abre um leque de possibilidades.
+Documentação: https://github.com/coreybutler/nvm-windows
+
