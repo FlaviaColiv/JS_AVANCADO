@@ -25,4 +25,17 @@ Funções executar código assicronamente, recebe funções como paramentro, cha
 O que vier depois e não for esses assincronos, mesmo assim, é apresentado antes do assincrono.
 Para parar execução clearInterval(idDoIntervalo) ou clearTimeout()
 
-Código Síncrono (linear de execução) e Assíncrono
+Código Síncrono (linear de execução) e Assíncrono (descola da continuidade e é apresentado em um tempo diferente).
+
+Promisses 
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise, de forma sequencial e facilita as exceções. Encadeamento de CallBacks
+Tem 4 estados: Pendente; Realizada (resolv); Recusada (Reject); Estabelecida.
+É uma classe e a primeira letra maiuscula 
+new Promise(funçãoresolv, funçãoreject) => {
+}
+
+() => aerofunction
+
+THEN 
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+
