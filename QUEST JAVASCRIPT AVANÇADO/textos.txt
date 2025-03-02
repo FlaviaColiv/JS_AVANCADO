@@ -1,0 +1,22 @@
+Quest JavaScript Avançado - Desafio API Github
+✨ LEIAM TODA A DESCRIÇÃO ANTES DE COMEÇAR A QUEST! ✨
+
+Utilize seus conhecimentos adquiridos no módulo de JavaScript Avançado para enfrentá-lo da maneira mais brilhante possível! 💪
+
+Faça o download do arquivo PDF, que está anexado aqui, e lá encontrará as instruções para este desafio! 📥
+
+Após concluí-lo, envie o link do repositório público do GitHub onde você armazenou sua solução no canal quests-prontas!
+
+Boa sorte, e que os desafios estejam ao seu alcance! 🚀
+
+Links de apoio:
+
+Buscando repositórios: Repositórios - GitHub Docs https://docs.github.com/pt/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user
+
+Buscando eventos: Eventos - GitHub Docs https://docs.github.com/pt/free-pro-team@latest/rest/activity/events?apiVersion=2022-11-28#list-events-for-the-authenticated-user
+
+Lembrando que para buscar os 10 primeiros repositórios e eventos é necessário usar o parametro: `?per_page=${items}` onde items é quantidade que irá retornar
+
+Exemplo para ser feito no fetch de eventos:
+
+${baseUrl}/${userName}/events?per_page=${maxItems}
