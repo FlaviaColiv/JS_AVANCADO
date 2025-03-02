@@ -146,3 +146,60 @@ JavaScript Avançado - Instalando e gerenciando versões do Node.js com NVM (Nod
 O NVM – Node Version Manager (gerenciador de versão do Node), permite que você instale e gerencie diferentes versões do Node.js em sua máquina de forma simples, bem como, proporciona a troca de uma versão para outra com um simples comando no terminal e isso te abre um leque de possibilidades.
 Documentação: https://github.com/coreybutler/nvm-windows
 
+JavaScript Avançado - Gerenciando pacotes com NPM
+Nesta aula avançada sobre JavaScript, você aprenderá como gerenciar pacotes com o NPM (Node Package Manager). O NPM é uma ferramenta essencial para o desenvolvimento de projetos JavaScript, permitindo que você instale, atualize e gerencie facilmente as dependências do seu projeto.
+
+comandos no terminal:
+
+npm init 
+nome do pacote sem espaços (Package name)
+versão (version)
+descrição (description)
+ponto de entrada (entry point)
+ponto de teste (test command)
+git repository
+keywords
+author
+license
+
+Is this Ok? Yes or Not
+
+Cria JSON
+
+No terminal:
+
+npm install nomeDoPacote --save
+
+
+
+JavaScript Avançado - Importar e exportar módulos JavaScript
+Nesta aula, você mergulhará no tópico de importação e exportação de módulos JavaScript. A capacidade de importar e exportar módulos é fundamental para organizar e modularizar seu código, permitindo reutilização e melhor legibilidade.
+
+Durante a aula, você aprenderá como exportar funções, variáveis de um módulo para que possam ser importados em outros arquivos JavaScript. Além disso, explorará diferentes tipos de exportação, como a exportação padrão e a exportação nomeada.
+
+Você também descobrirá como importar módulos em outros arquivos JavaScript, utilizando as sintaxes adequadas para importar módulos padrão, exportações nomeadas e exportações padrão.
+
+Modulos JS, pode usar e deixar de usar no arquivo.
+
+Em um arquivo de referencia
+export function nomeDaFunção () {
+
+} ou export { nomeDaFunção1, nomeDaFunção2 }
+
+Importa arquivo referenciado
+import { nomeDaFunção1, nomeDaFunção2 } from './ggggggg'
+
+no html 
+<script type="module" src="./caminho"></script>
+
+JavaScript Avançado - Export default e Export nomeado
+Nesta aula, você explorará os conceitos de exportação de módulos usando as declarações "export default" e "export nomeado". Essas são duas formas poderosas de compartilhar código entre diferentes arquivos JavaScript.
+
+Primeiramente, você aprenderá sobre a exportação padrão ("export default"), que permite exportar um único valor, função ou objeto como o valor padrão de um módulo. Você entenderá como usar essa sintaxe para exportar e importar módulos de forma mais concisa. Não usa chaves.
+
+Em seguida, você será apresentado à exportação nomeada ("export nomeado"), que permite exportar vários valores, funções ou objetos de um módulo. Você aprenderá como usar essa sintaxe para exportar várias entidades específicas e como importá-las corretamente em outros arquivos JavaScript. Prefere que use essa. Usa chaves.
+
+export default nomeDOarquivo
+
+import nomeDOarquivo from './...'
+
