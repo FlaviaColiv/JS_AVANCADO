@@ -1,0 +1,10 @@
+Array === lista
+
+Transforma as listas
+Filter === filtra itens em uma lista
+Map === retorna uma nova array com a mesma quantidade de itens na lista
+Reduce === generica de trabalhar com arrays
+
+Interpolação entre Strings === Tamplate literal coloca com o acento crase e ${...}
+
+Desestruturação === 
