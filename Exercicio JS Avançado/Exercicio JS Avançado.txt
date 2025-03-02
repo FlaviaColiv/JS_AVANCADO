@@ -1,0 +1,83 @@
+Exercícios JavaScript avançado - Exercício Js avançado - app de gerador de conselhos
+Continuando com o exercício anterior que foi realizado no módulo de exercícios CSS avançado - Flexbox, agora vamos aplicar o JavaScript para gerar os conselhos aleatoriamente diretamente da API de conselhos.
+
+Use os conhecimentos que aprendeu no módulo de JavaScript avançado pra resolvê-lo da melhor forma, leia atentamente a descrição da tarefa.
+
+Tente realizar o exercício sozinho(a), e depois verifique a solução proposta nas anotações.
+
+Link para o exercício proposto:  Exercício HTML + CSS + JS Avançado - Parte 2 - Gerador de conselhos (notion.site) https://humane-legend-9f9.notion.site/Exerc-cio-HTML-CSS-JS-Avan-ado-Parte-2-Gerador-de-conselhos-0f81d020adf9461aaf5c7e7f2858db07
+
+Quando finalizar, não se esqueça de colocar no seu GitHub e compartilhe no Linkedln! 
+
+Boa sorte!
+
+IMPORTANTE: A resolução completa estará no logo abaixo!
+Links de apoio:
+Documentação da Api de conselhos: Advice Slip JSON API - Usem o RANDOM ADVICE APENAS, não é necessário o ID https://api.adviceslip.com/#endpoint-random
+JavaScript HTML DOM EventListener: JavaScript DOM EventListener (w3schools.com) https://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+Funções assíncronas: Funções assíncronas - JavaScript | MDN (mozilla.org) https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function
+
+Documentação do Objeto Response: Resposta: propriedade ok - APIs da Web | MDN (mozilla.org) https://developer.mozilla.org/en-US/docs/Web/API/Response/ok
+
+
+Exercício HTML + CSS + JS Avançado - Parte 2 - Gerador de conselhos
+Importante: Os arquivos iniciais estão módulo: Exercícios CSS avançado - Flexbox - Exercício app de gerador de conselhos
+Descrição da tarefa: Continuando com o exercício Frontend Mentor | Advice generator app coding challenge que foi estilizado no CSS avançado, agora vamos aplicar o JavaScript para gerar os conselhos aleatoriamente diretamente da API de conselhos.
+Dicas: 
+- É essencial começar pensando no objetivo do que precisa ser feito e no passo a passo pra chegar lá.
+- Se esquecer algum conceito, basta rever as aulas desse módulo.
+- Não esqueça de linkar o arquivo JavaScript no html! 
+-  Objetivo do exercício: ao carregar a página e ao clicar no botão, deve ser gerado um conselho aleatoriamente da api de conselhos.
+- Use MUITO o console.log, debug e a aba console do inspecionar elementos. Assim entenderá o fluxo do código e resolver possíveis problemas
+
+NÃO SAIA TENTANDO ESCREVER CÓDIGOS DE QUALQUER MANEIRA! Antes disso você precisa saber O QUE precisa ser feito e só depois COMO fazer. 🧙‍♂️​
+Passos:
+Pegar o elemento de  botão para ser adicionado o evento de clique nele.
+Pegar o elemento de id do conselho 
+Pegar o elemento de descrição do conselho
+Após conseguirmos os elementos do html, é necessário a criação da função responsável por pegar os dados da API. A melhor forma de se consumir a api é usando async await. Caso não tenha visto a aula, sugiro que assista novamente. Nas referências ficará um link com exemplos.
+Importante que durante a chamada a api seja feito o tratamento dos erros usando o try-catch, caso não lembre pode assistir a aula novamente. 
+Dentro da função, após pegarmos os dados da API, é necessário atualizar o conteúdo do id e descrição do conselho que colocamos em uma variável usando o innertText. A diferença entre innerText e innerHTML: 
+O innerHTML pode adicionar ou pegar elementos HTML , já com o innerText isso não é possivel, ele pode apenas atribuir um texto ou pegar o texto de determinado elemento.
+Nesse caso, queremos só atribuir um texto, por isso usamos o innerText
+Por fim, basta chamar a função criada.
+Atribuir a função que criamos para ser executada no evento do clique do botão ou se preferir, criar o escopo da função dentro do listener.
+Resolução 👀 (só olhe depois de fazer o exercício)
+✅ JavaScript
+const adviceUpdateButton = document.querySelector(".advice-update");
+const adviceNumber = document.querySelector(".advice-id");
+const adviceDescription = document.querySelector(".advice-description");
+
+async function getAdvice() {
+  try {
+    const response = await fetch("https://api.adviceslip.com/advice");
+
+    /* 
+      A propriedade .ok é responsável por verificar se a resposta (Response) foi feita com sucesso ou não, 
+  
+      nesse caso estamos negando a resposta, ou seja, se a resposta não foi feita com sucesso, retornamos um erro.
+    
+      Ela está presente no objeto Response, que é retornado pela função fetch. 
+    */
+
+    if (!response.ok){
+      throw new Error("Ocorreu um erro ao tentar buscar as informações da API");
+    }
+
+    const adviceContent = await response.json();
+    const adviceId = `Advice #${adviceContent.slip.id}`;
+    const adviceText = `"${adviceContent.slip.advice}"`;
+
+    adviceNumber.innerText = adviceId;
+    adviceDescription.innerText = adviceText;
+
+  } catch (error) {
+    console.error("Erro ao tentar buscar as informações da API", error);
+  }
+  
+}
+
+adviceUpdateButton.addEventListener("click", getAdvice);
+
+getAdvice();
