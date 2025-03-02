@@ -7,4 +7,15 @@ Reduce === generica de trabalhar com arrays
 
 Interpolação entre Strings === Tamplate literal coloca com o acento crase e ${...}
 
-Desestruturação === 
+Desestruturação de objeto === usa cheves {nome: nome, idade: idade, propriedade: variedade} vários objetos 
+Desestruturação de array === usa colchetes
+let [ um, dois, tres ] = numeros
+
+Spred === expandir os objetos de um objeto interável (objetos que podem ser percorridos) - retorna os itens completos não individualmente. Função igual a CONCAT. Mas, economiza código.
+[...objeto]
+
+Parametro REST === além dos ... usa dentro dos parentes e args e monta na forma de um array 
+function(a, b, ...args) {
+    ....
+}
+
