@@ -121,3 +121,13 @@ Para executar é necessário usar o comando no terminal, por exemplo: node promi
 promise-all.js - com a primeira parte da aula, lembrando que existem coisas comentadas para acompanhar juntamente com a aula
 promse-all-settled.js - segunda parte da aula 
 promise-all-real - exemplo prático do github
+
+JavaScript Avançado - Como Trabalhar com Datas em JavaScript
+Dominar a manipulação de datas é essencial em JavaScript. Vamos abordar as melhores práticas e ferramentas para lidar com datas, enriquecendo suas habilidades de programação.
+
+Links de apoio:
+
+Intl.DateTimeFormat - JavaScript | MDN (mozilla.org) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat
+
+Date.prototype.toLocaleDateString() - JavaScript | MDN (mozilla.org)
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString
