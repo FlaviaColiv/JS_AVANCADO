@@ -36,6 +36,14 @@ new Promise(funçãoresolv, funçãoreject) => {
 
 () => aerofunction
 
-THEN 
+THEN === então
 https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+executa somente depois da anterior
+só pode usar se retorna uma Promise
 
+Async e Await
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/async_function
+async sempre na função imediata da função, e só usa await dentro da função async, ela espera terminar para começar, depencia de uma função.
+
+Tratar erros JavaScript
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Error
