@@ -14,8 +14,15 @@ let [ um, dois, tres ] = numeros
 Spred === expandir os objetos de um objeto interável (objetos que podem ser percorridos) - retorna os itens completos não individualmente. Função igual a CONCAT. Mas, economiza código.
 [...objeto]
 
-Parametro REST === além dos ... usa dentro dos parentes e args e monta na forma de um array 
-function(a, b, ...args) {
+Parametro REST === além dos ... usa dentro dos parentes e o argumento e monta na forma de um array 
+function(a, b, ...argumento) {
     ....
-}
+} com a função map seleciona individualmente (não sabe quantos paramentros que passar em uma função)
 
+SetInterval === repetidamente em um intervalo de tempo
+SetTimeout === reprozu depois de um tempo
+Funções executar código assicronamente, recebe funções como paramentro, chama como Alert. Trabalha como milissegundo (3s = 3000)
+O que vier depois e não for esses assincronos, mesmo assim, é apresentado antes do assincrono.
+Para parar execução clearInterval(idDoIntervalo) ou clearTimeout()
+
+Código Síncrono (linear de execução) e Assíncrono
