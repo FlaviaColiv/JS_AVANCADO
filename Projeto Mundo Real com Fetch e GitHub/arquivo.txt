@@ -1,1 +1,11 @@
 https://github.com/devemdobro/projeto-inicial-fetch-github-api
+
+Fork: https://github.com/FlaviaColiv/projeto-inicial-fetch-github-api
+
+
+Projeto mundo real com Fetch e GitHub - Buscando os dados do usuário pela API do GitHub
+Nessa aula, vamos dar continuidade a criação do nosso projeto e começando a trabalhar com o JavaScript.
+
+Link de apoio:
+
+https://docs.github.com/pt/rest/users/users?apiVersion=2022-11-28#get-a-user
